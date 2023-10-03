@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome_to_our_Cafe</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function scrollToContact(event) {
+                event.preventDefault(); // Prevent the default link behavior
+                var element = document.getElementById("contact");
+                element.scrollIntoView({ behavior: "smooth" }); // Add smooth scrolling
+            }
+        </script>
+    </head>
+
+<body>
+    <h1 style="font-family: comic sans MS, cursive;">Cafe_Maple</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#contact" onclick="scrollToContact(event)">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="items">
+        <div class="item">
+            <img src="./Images/Donat_03.jpg" alt="Donat_03">
+            <h2>Donut</h2>
+            <p>Donuts come in many different flavors, including chocolate, vanilla, strawberry, and maple.</p>
+        </div>
+        <div class="item">
+            <img src="./Images/Cappuccino.jpg" alt="Cappuccino">
+            <h2>Cappuccino</h2>
+            <p>Cappuccinos come in many different sizes, so you can find one that is perfect for your needs.</p>
+        </div>
+        <div class="item">
+            <img src="./Images/CupCake (2).jpg" alt="CupCake">
+            <h2>CupCake</h2>
+            <p>Cupcakes are often decorated with frosting, sprinkles, or other toppings.</p>
+        </div>
+        <div class="item">
+            <img src="./Images/PenCake.jpg" alt="PenCake">
+            <h2>PanCake</h2>
+            <p>Pancakes are a perfect way to start your day or to enjoy a lazy weekend breakfast.</p>
+        </div>
+        <div class="item">
+            <img src="./Images/Croissant_01.jpg" alt="Croissant">
+            <h2>Croissant</h2>
+            <p>Croissants are often served for breakfast, but they can also be enjoyed as a snack or dessert.</p>
+        </div>
+    </section>
+
+    <footer id="contact" class="gradient-background">
+        <h3 style="color: aliceblue;">Contact Us</h3>
+        <div class="contact-info">
+            <ul class="column" style="font-family: cursive;color: aliceblue;">
+                <li>123 Main Street, Anytown, CA 91234</li>
+                <li>Phone: (123) 456-7890</li>
+                <li >Weekdays: 6:00am - 6:00pm</li>
+                <li>Saturday: 7:00am - 7:00pm</li>  
+                <li> Closed on Sundays</li>
+            </ul>
+            <ul class="column">
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg></a></li>
+            </ul>
+        </div>
+        <p class="text-body-secondary">© 2023 All rights reserved.</p>
+          
+    </footer>
+
+</body>
+</html>
